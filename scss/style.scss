@@ -1,0 +1,29 @@
+@impoprt "nullstyle.scss";
+$fz:40px;
+$color_1:#DC143C;
+$color_2:#4682B4;
+.block{
+  padding: 30px;
+  font-size: 25px;
+  line-height: 35px;
+
+
+  .block_text{
+    font-size: $fz;
+    span{
+      color: green;
+    }
+  }
+}
+.link{
+  color: $color_1;
+  text-decoration: underline;
+  font-size: 20px;
+  .block &{
+    font-size: $fz;
+  }
+  &:hover{
+    color:red;
+  }
+
+}

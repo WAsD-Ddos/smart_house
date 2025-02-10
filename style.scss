@@ -1,0 +1,277 @@
+//обнулене
+@import "nullstyle.scss";
+//шрифт Pt Sanss
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  font-family: "Noto Sans";
+
+}
+.wrapper{
+  padding-top: 30px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.menu{
+
+  padding-bottom: 25px;
+   &_row{
+     display:flex;
+     justify-content: space-between;
+     .menu_logo{}
+     .menu_list{
+       .menu_ul{
+         margin-top: 10px;
+         display: flex;
+         //наведение
+         li:hover:nth-child(1){
+           &:after {
+            content: '';
+            margin-top: 1.2px;
+            display: block;
+            height: 0.5px;
+            background: black;
+          }
+           }
+           li:hover:nth-child(2){
+             &:after {
+              content: '';
+              margin-top: 1.2px;
+              display: block;
+              height: 0.5px;
+              background: black;
+
+            }
+             }
+         //отступы от элементов
+         li{
+           padding-left: 30px;
+         }
+         //ссылка
+         a{color: black;text-transform: uppercase;}
+
+         }
+         }
+       }
+  }
+
+
+.smart{
+
+ background-color:#F5F5F5;
+
+ .smart_bg {
+
+   position: relative;
+   text-align: center;
+ img{
+   max-height: 900px;
+   width: 100%;}
+
+ }
+
+
+     .smart_title{
+
+       position: absolute;
+        top: 30%;
+       left: 60%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+
+
+     }
+      .smart_big_row{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+     .smart_row{
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .smart_card{
+         margin-left: 30px;
+
+
+
+
+         .column_items:hover{
+            animation-play-state: running;
+
+         }
+
+           @keyframes card-bottom{
+           0%{
+             bottom: 110px;
+           }
+           50%{
+             bottom: 135px;
+           }
+           100%{
+             bottom: 160px;
+           }
+         }
+         .column_items{
+            position: relative;
+            bottom: 110px;
+           padding-top: 10px;
+           background-color: white;
+           border-radius: 30px;
+           display: flex;
+           flex-direction: column;
+
+           animation-name: card-bottom;
+           animation-duration: 3.5s;
+           animation-timing-function: linear;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+
+           width: 290px;
+           min-height: 420px;
+
+           .card_logo{
+
+             padding-bottom: 0px;
+             align-self: center;
+             width: 90px;
+             height: 90px;
+             background-color:#F5F5F5;
+             border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+              img{
+                position: relative;
+
+                top: 10px;
+                max-width: 65px;
+              }
+
+
+           }
+           .card_title{
+             padding-top: 40px;
+             align-self: center;
+             font-size: 22px;
+             font-weight: 600;
+             letter-spacing: 0.6px;
+             padding-bottom: 20px;
+              p{
+               text-align: center;
+               line-height: 25px;
+             }
+           }
+           .card_text{
+             text-align:center;
+             padding-left: 10px;
+             padding-bottom: 20px;
+             p{
+               font-size: 18px;
+               letter-spacing: 1px;
+               line-height: 30px;
+             }
+           }
+           .card_href{
+             align-self: center;
+             font-size: 18px;
+             letter-spacing: 1.2px;
+            a{ color: black;font-weight: 300;}
+             &:after {
+              content: '';
+              margin-top: 4px;
+              display: block;
+              height: 0.5px;
+              background: black;
+            }
+           }
+         }
+       }
+     }
+   }
+
+    .about{
+      background-color:#F5F5F5;
+      padding-top: 50px;
+      .about_row{
+        display: flex;
+        justify-content: space-between;
+
+        .about_column_items{
+
+          .about__title{
+
+            font-size:40px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            padding-bottom: 35px;
+
+          }
+          .about_list{
+            font-size: 18px;
+            letter-spacing: 1px;
+            ul{}
+            li{
+              position: relative;
+              padding-bottom: 24px;
+              margin-left: 13px;
+            }
+            li:before{
+               content: '✔';
+                position: relative; top: 0; right: 7px;
+                 color: #66a7af;
+              }
+
+          }
+          .about_button{
+            button{
+            border: 2px solid #66a7af;
+            border-radius: 50px;
+            min-width: 360px;
+            min-height: 75px;
+            //text
+            color: #66a7af;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+           }
+            button:hover{
+              background-color: black;
+              color: white;
+              border: 2px solid black;
+            }
+
+
+        }
+        }
+        .about_column_img{
+          max-width: 400px;
+
+
+          img{
+            max-width: 100%;
+            border-radius: 45px;
+            margin: 0 auto;
+          }
+          }
+      }
+    }
+   .card1 {
+     position: relative;
+     bottom: 45px;
+   }
+   .card3 {
+     position: relative;
+     bottom: 45px;
+   }
