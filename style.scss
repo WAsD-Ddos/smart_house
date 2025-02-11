@@ -267,6 +267,8 @@ body{
           }
       }
     }
+
+
    .card1 {
      position: relative;
      bottom: 45px;
@@ -275,3 +277,62 @@ body{
      position: relative;
      bottom: 45px;
    }
+
+
+   .people{
+     padding-top: 50px;
+     background-color:#F5F5F5;
+     .people_column{
+       .people_title{
+         font-size: 45px;
+         text-align: center;
+         font-weight: 600;
+         letter-spacing: 1.2px;
+         padding-bottom: 30px;
+       }
+        .people_row{
+          display: flex;
+
+          .peope_block{
+            background-color:white;
+            border-radius: 50px;
+             max-width: 380px;
+             height: 300px;
+             margin-left: 30px;
+             padding: 20px;
+
+             .people_block_title{
+               padding-top: 15px;
+               font-size: 22px;
+               font-weight: 600;
+               letter-spacing: 1.2px;
+               padding-bottom: 25px;
+             }
+            .people_text{
+               min-height:65%;
+               font-size: 18px;
+               line-height: 30px;
+              //.people_text::after{
+                //content: '';
+                //margin-top: 4px;
+                //display: block;
+                //height: 0.5px;
+                //background: black;
+              //}
+
+
+            }
+            .people_subtext{
+               flex: 0 1 auto;
+               font-size: 20px;
+               text-transform: uppercase;
+               //padding-top: 50px;
+               color: #66a7af;
+               text-decoration: overline;
+
+
+          }
+        }
+     }
+   }
+ }
