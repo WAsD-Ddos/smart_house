@@ -87,6 +87,20 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-bottom: 35px;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
 .menu {
   padding-bottom: 25px;
 }
@@ -295,6 +309,7 @@ body {
 }
 
 .about {
+  padding-bottom: 50px;
   background-color: #F5F5F5;
   padding-top: 50px;
 }
@@ -306,7 +321,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.about .about_row .about_column_items .about__title {
+.about .about_row .about_column_items .about_title {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -360,6 +375,65 @@ body {
 .card3 {
   position: relative;
   bottom: 45px;
+}
+
+.mark {
+  background-color: #bdbebe;
+}
+.mark .mark_bg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mark .mark_bg img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+.mark .mark_bg .mark_title {
+  color: white;
+  position: absolute;
+  top: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.mark .mark_bg .mark_subtitle {
+  color: white;
+  display: block;
+  max-width: 800px;
+  position: absolute;
+  top: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.mark .mark_bg .mark_button {
+  position: absolute;
+  top: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.mark .mark_bg .mark_button button {
+  border: 2px solid white;
+  border-radius: 50px;
+  min-width: 360px;
+  min-height: 75px;
+  background-color: rgba(28, 28, 28, 0);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mark .mark_bg .mark_button button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
 }
 
 .people {
